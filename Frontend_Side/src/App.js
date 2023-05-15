@@ -25,12 +25,12 @@ function App() {
 
       <div className="container">
 
-        <h1>ToDo App</h1>
+        <h1>ToDo List</h1>
 
         <div className="top">
           <input
             type="text"
-            placeholder="Add ToDos..."
+            placeholder="Add ToDo Items Here......"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
@@ -40,7 +40,7 @@ function App() {
             onClick={isUpdating ?
               () => updateToDo(toDoId, text, setToDo, setText, setIsUpdating)
               : () => addToDo(text, setText, setToDo)}>
-            {isUpdating ? "Update" : "Add"}
+            {isUpdating ? "Update item" : "Add"}
           </div>
 
         </div>

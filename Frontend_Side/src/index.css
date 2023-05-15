@@ -9,10 +9,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: orange;
 }
 
 .container{
-  max-width: 600px;
+  max-width: 700px;
   margin: auto;
   padding: 0 1rem;
 }
@@ -20,6 +21,9 @@ body {
 h1{
   margin-top: 1rem;
   text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .top{
@@ -31,7 +35,10 @@ h1{
 
 input{
   border: none;
-  outline: none;
+  outline: 1px;
+  outline-style: dashed;
+  outline-color: aqua;
+  background-color: rgb(255, 247, 247);
   width: 400px;
   padding: 0.5rem;
   border-bottom: 1px solid #03e6ff;
@@ -47,8 +54,8 @@ input{
 .todo{
   position: relative;
   margin-top: 1rem;
-  background-color: #0fafea;
-  color: #383131;
+  background-color: rgb(0, 191, 255);
+  color: #000000;
   padding: 1.5rem 3rem;
   border-radius: 5px;
 }

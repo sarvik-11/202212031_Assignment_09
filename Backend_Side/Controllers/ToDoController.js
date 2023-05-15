@@ -11,7 +11,7 @@ module.exports.saveToDo = (req, res) => {
     ToDoModel
         .create({ text })
         .then((data) =>{ 
-            console.log("Added Successfully...")
+            console.log("Added data Successfully...")
             console.log(data)
             res.send(data)
         })
@@ -25,7 +25,7 @@ module.exports.deleteToDo = (req, res) => {
 
     ToDoModel
         .findByIdAndDelete(_id)
-        .then(() => res.set(201).send("Deleted Successfully..."))
+        .then(() => res.set(201).send("Deleted data Successfully..."))
         .catch((err) => console.log(err));
 }
 
@@ -34,6 +34,6 @@ module.exports.updateToDo = (req, res) => {
 
     ToDoModel
         .findByIdAndUpdate(_id, { text })
-        .then(() => res.set(201).send("Updated Successfully..."))
+        .then(() => res.set(201).send("Updated data Successfully..."))
         .catch((err) => console.log(err));
 }
