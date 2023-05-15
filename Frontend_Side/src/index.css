@@ -34,11 +34,11 @@ input{
   outline: none;
   width: 400px;
   padding: 0.5rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #03e6ff;
 }
 
 .add{
-  background-color: #000;
+  background-color: #ec1919;
   color: #fff;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -47,8 +47,8 @@ input{
 .todo{
   position: relative;
   margin-top: 1rem;
-  background-color: #000;
-  color: #fff;
+  background-color: #0fafea;
+  color: #383131;
   padding: 1.5rem 3rem;
   border-radius: 5px;
 }
